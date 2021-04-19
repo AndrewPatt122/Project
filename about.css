@@ -1,0 +1,217 @@
+/*Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color: #eee;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 20px;
+}
+
+.wrapper {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.wrapper h2 {
+    padding-top: 100px
+}
+
+header {
+    height: 100px;
+    background: #262626;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+    line-height: 100px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 28px;
+    font-family: poppins;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+nav {
+    float: right;
+    line-height: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: poppins;
+    letter-spacing: 2px;
+    font-size: 21px;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.banner-area {
+    width: 100%;
+    height: 300px;
+    position: fixed;
+    top: 100px;
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner-area h2 {
+    padding-top: 4%;
+    font-size: 70px;
+    font-family: poppins;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.container-fluid {
+    padding-top: 420px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.container-fluid h2 {
+    color: #262626;
+    position: relative;
+    width: 27rem;
+}
+
+.container-fluid h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    width: 67px;
+    height: 2px;
+}
+
+.accordion {
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid #6db5ff;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.accordion .icon {
+    padding-right: 10px;
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    background: url(images/add-icon.png) no-repeat 8px 7px;
+    border-radius: 50%;
+    float: left;
+    transition: all .5s ease-in;
+}
+
+.accordion h5 {
+    font-size: 22px;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-weight: normal;
+    color: #1f5c9a;
+    transition: all .5s ease-in;
+}
+
+.active .icon {
+    background: url(images/minus-icon.png) no repeat 8px -25px #fff;
+}
+
+.active {
+    background-color: #6db5ff;
+    color: #fff;
+}
+
+.active h5 {
+    color: #fff;
+}
+
+.panel {
+    padding: 0 15px;
+    border-left: 1px solid #6db5ff;
+    margin-left: 25px;
+    font-size: 20px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .5s ease-in;
+}
+
+.container-fluid-artists {
+    padding-top: 20px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.container-fluid-artists h2 {
+    color: #262626;
+    position: relative;
+    width: 35rem;
+}
+
+.container-fluid-artists h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    width: 67px;
+    height: 2px;
+}
+
+.accordion-artists {
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid #6db5ff;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.accordion-artists .icon {
+    padding-right: 10px;
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    background: url(images/music-icon.png) no-repeat 8px 7px;
+    border-radius: 50%;
+    float: left;
+    transition: all .5s ease-in;
+}
+
+.accordion-artists h5 {
+    font-size: 22px;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-weight: normal;
+    color: #1f5c9a;
+    transition: all .5s ease-in;
+}
+
+.panel-artists {
+    padding: 0 15px;
+    border-left: 1px solid #6db5ff;
+    margin-left: 25px;
+    font-size: 20px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .5s ease-in;
+}
